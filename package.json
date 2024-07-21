@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "dartcode a leetcode clone backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "leetcode",
+    "clone",
+    "dartcode"
+  ],
+  "author": "developerkaran025@gmail.com",
+  "license": "ISC"
+}
