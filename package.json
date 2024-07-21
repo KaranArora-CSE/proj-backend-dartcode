@@ -4,6 +4,8 @@
   "description": "dartcode a leetcode clone backend ",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,5 +16,8 @@
     "dartcode"
   ],
   "author": "developerkaran025@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
