@@ -4,14 +4,18 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+// initial imorts
+const startDatabase = require('./src/db/mongoDb');
 
 // importing router 
 const authRoute = require('./src/routes/auth.routes');
-const startDatabase = require('./src/db/mongoDb');
+const adminRoute = require('./src/routes/admin.routes');
+
 
 // registering router   
 app.use(express.json()) // using JSON parser
 app.use('/api/v1/',authRoute);
+app.use('/api/v1/',adminRoute);
 
 // starting application
 startDatabase();
