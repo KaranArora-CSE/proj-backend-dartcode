@@ -1,14 +1,23 @@
-// Copyright 2024 devlo
-// 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-// 
-//     https://www.apache.org/licenses/LICENSE-2.0
-// 
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+const express = require('express');
+const AuthController = require('../controllers/auth.controller');
+const router = express.Router();
 
+router.get('/auth/working',AuthController.handleAuth);
+router.post('/auth/signup',AuthController.handleSignUp);
+router.post('/auth/signin',AuthController.handleSignIn);
+// router.get('/auth/signout',AuthController.handleSignOut);
+
+// general user routes
+// router.route("/login").post(loginUSer)     
+// router.route("/logout").post(verifyJwt ,logoutUser)
+// router.route("/refreshToken").post(refreshAccessToken)  
+// router.route("/change-password").post(verifyJwt,changeCurrentPassword)
+// router.route("/current-user").get(verifyJwt ,getCurrentUser)
+// router.route("/update-account").patch(verifyJwt,UpdateAccountDetails)
+// router.route("/update-avatar").patch(verifyJwt,upload.single("avatar"),updateAvatar)
+// router.route("/update-coverimage").patch(verifyJwt,upload.single("coverimage"),updateUserCoverImage)
+// router.route("/c/:username").get(verifyJwt,getUserChannelProfile)
+// router.route("/watchHistory").get(verifyJwt,getWatchHistory)
+// router.route("/forgot-password").post(forgotPassword)
+
+module.exports = router;

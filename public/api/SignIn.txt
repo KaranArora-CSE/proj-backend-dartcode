@@ -1,0 +1,77 @@
+{
+  "email":"cse.karanarora@gmail.com",
+  "password":"KaranArora@123",
+  "name":"Karan Arora",
+  "address":"Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+  "number":8447736113
+}
+
+
+
+// correct email and password
+{
+  "data": {
+    "user": {
+      "_id": "66a0f26b60ccf437fe4aeb62",
+      "name": "Karan Arora",
+      "email": "cse.karanarora@gmail.com",
+      "number": 8447736113,
+      "address": "Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+      "password": "KaranArora@123",
+      "__v": 0
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmMjZiNjBjY2Y0MzdmZTRhZWI2MiIsImVtYWlsIjoiS2FyYW4gQXJvcmEiLCJpYXQiOjE3MjE4MjQ2MzJ9.Ad6FNIZOQ8la-aqrpDLUBJYFmG55JzxAKz-LYVkjY1A"
+  },
+  "message": "Password Verified",
+  "success": false
+}
+
+
+
+// Incorrect email
+{
+  "data": {},
+  "message": "User not exists",
+  "success": true
+}
+
+
+// Incorrect password
+{
+  "data": {
+    "user": {
+      "_id": "66a0f26b60ccf437fe4aeb62",
+      "name": "Karan Arora",
+      "email": "cse.karanarora@gmail.com",
+      "number": 8447736113,
+      "address": "Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+      "password": "KaranArora@123",
+      "__v": 0
+    }
+  },
+  "message": "Password Incorrect",
+  "success": false
+}
+
+
+
+// missing data 
+{
+  "data": {},
+  "message": "Missing data",
+  "success": false
+}
+
+
+
+// logic fails 
+{
+  "data": {},
+  "message": "Unknown Server Error",
+  "success": false
+}
+
+
+
+
+

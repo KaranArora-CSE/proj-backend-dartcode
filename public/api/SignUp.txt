@@ -1,0 +1,97 @@
+{
+	"email":"cse.karanarora",
+	"password":"KaranArora@123",
+	"name":"Karan Arora",
+	"address":"Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+	"number":8447736113
+}
+
+// --------------------------------
+
+// created successfully 
+{
+  "data": {
+    "newUser": {
+      "name": "Karan Arora",
+      "email": "cse.karanarora",
+      "number": 8447736113,
+      "address": "Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+      "password": "KaranArora@123",
+      "_id": "66a0d10bd7420e183fe2f78a",
+      "__v": 0
+    }
+  },
+  "message": "New User Created",
+  "success": true
+}
+
+// Unknown error 
+{
+  "data": {
+    "error": {
+      "errorResponse": {
+        "index": 0,
+        "code": 11000,
+        "errmsg": "E11000 duplicate key error collection: local_leetcode.users index: email_1 dup key: { email: \"cse.karanarora\" }",
+        "keyPattern": {
+          "email": 1
+        },
+        "keyValue": {
+          "email": "cse.karanarora"
+        }
+      },
+      "index": 0,
+      "code": 11000,
+      "keyPattern": {
+        "email": 1
+      },
+      "keyValue": {
+        "email": "cse.karanarora"
+      }
+    }
+  },
+  "message": "Unknown Server Error",
+  "success": false
+}
+
+// already exists
+{
+  "data": {
+    "user": {
+      "_id": "66a0d10bd7420e183fe2f78a",
+      "name": "Karan Arora",
+      "email": "cse.karanarora",
+      "number": 8447736113,
+      "address": "Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+      "password": "KaranArora@123",
+      "__v": 0
+    }
+  },
+  "message": "Existing Email",
+  "success": false
+}
+
+// missing data 
+{
+  "data": {},
+  "message": "Missing data",
+  "success": false
+}
+
+// new user with token
+{
+  "data": {
+    "newUser": {
+      "name": "Karan Arora",
+      "email": "cse.karanarora@gmail.com",
+      "number": 8447736113,
+      "address": "Hno 1220 , Gali Krishna Mandir Najafgarh New Delhi",
+      "password": "KaranArora@123",
+      "_id": "66a0f26b60ccf437fe4aeb62",
+      "__v": 0
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmMjZiNjBjY2Y0MzdmZTRhZWI2MiIsImVtYWlsIjoiY3NlLmthcmFuYXJvcmFAZ21haWwuY29tIiwiaWF0IjoxNzIxODIzODUyfQ.whZwww2r6TxkpXSICclNXZ1UbnudMq-x8sio1PEw2fA"
+  },
+  "message": "New User Created",
+  "success": true
+}
